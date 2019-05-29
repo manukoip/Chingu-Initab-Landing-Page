@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>IniTab Landing Page Clone</title>
+</head>
+<body>
+
+	<!-- Nav Bar -->
+<div class="container">
+	<div class="sidebar">
+		<ul>
+			<button><li><i class="settings fas fa-wrench"></i> <a href="#" class="settings-txt">Settings</a></li></button>
+			<button><li><i class="gists fas fa-code"></i> <a href="#" class="gists-txt">Gists</a></li></button>
+			<button><li><i class="stack fab fa-stack-overflow"></i> <a href="#" class="stack-txt">Stack Overflow</a></li></button>
+			<button><li><i class="trending fas fa-chart-line"></i> <a href="#" class="trending-txt">Trending</a></li></button>
+			<button><li><i class="scratch fas fa-pencil-alt"></i> <a href="#" class="scratch-txt">Scratch Pad</a></li></button>
+			<button><li><i class="playground far fa-lightbulb"></i> <a href="#" class="playground-txt">Playground </a><i class="playground-txt fas fa-lock"></i></li></button>
+			<button><li><i class="help fas fa-question"></i> <a href="#" class="help-txt">Help/Intro</a></li></button>
+		</ul>
+		<section class="logo">
+			<a href="https://initab.com/" target="_blank"><img class="logo" src="images/initab_logo.png" alt="Initab"></a>
+		</section>
+		<section class="media-icon">
+			<a href="https://www.facebook.com" class="media" target="_blank"><img src="images/facebook.png" style="width:24px;height:24px;" alt="Facebook"></a>
+			<a href="https://github.com/Raineldn" class="media" target="_blank"><img src="images/github.png"  style="width:24px;height:24px;" alt="GitHub"></a>
+			<a href="https://www.linkedin.com/in/raine-collins-a78871a4/" class="media" target="_blank"><img src="images/linkedin.png" style="width:24px;height:24px;" alt="Linkedin"></a>
+			<a href="https://www.reddit.com/" class="media" target="_blank"><img src="images/reddit.png" style="width:24px;height:24px;" alt="Reddit"></a>
+		</section>
+	</div>
+
+	<!-- Popular on R/JavaScript -->
+	<div class="popular">
+		<header class="reddit blue-header">
+			<i class="fab popular-h fa-reddit-alien"></i> Popular on R/JavaScript
+		</header>
+		<ul class="popular-entries">
+		</ul>
+	</div>
+
+	<!-- Relevant JavaScript History -->
+
+	<div class="middle">
+		<div class="relevant">
+			<header class="relevant-h blue-header">
+				<i class="far fa-clock"></i> Relevant JavaScript History
+			</header>
+			<div class="inner-relevant">
+					<ul class="relevant-histories">
+						
+					</ul>
+			</div>
+		</div>
+		<div class="date-time">
+			<div class="clock-session">
+				<div id="ClockDisplay" class="clock" onload="showTime()"></div><span class="session"></span>
+			</div>
+			<div class="date-display">
+				Date goes here
+			</div>
+			<div class="popup">
+				<h6 class="main-popup"><i class="fas fa-question-circle"></i> Did you know you can add CUSTOM LINKS to the display in this section? Open the SETTINGS panel and add the URLs of your favorites sites to the 'CUSTOM LINKS' textarea.</h6>
+				<button class="got-it"><i class="fas fa-times-circle"></i>Got it! Don't show me this again.</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="right">
+
+	<!-- GITHUB ISSUES HISTORY -->
+	<div class="github-history">
+			<header class="github-h blue-header">
+				<i class="fab fa-github-alt"></i> GitHub Issues History
+			</header>
+			<h6>switch to gitlab</h6>
+			<div class="issues-pulls">
+				<button class="issues">ISSUES<span><i class="fas fa-caret-up caret-1"></i></span></button>
+				<button class="pull-reqs">PULL REQUESTS</button>
+				<ul class="issues-content">
+					
+				</ul>
+			</div>
+			<div class="space">
+		
+	</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+	<script src="javascript.js"></script>
+</body>
+</html>

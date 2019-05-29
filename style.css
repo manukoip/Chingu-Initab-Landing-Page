@@ -1,0 +1,448 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
+
+/* WebKit */
+.relevant::-webkit-scrollbar { width: 0 !important }
+.popular::-webkit-scrollbar { width: 0 !important }
+.github-history::-webkit-scrollbar { width: 0 !important }
+
+/* CSS Variables */
+:root {
+	--nav-background: #44475A;
+	--primary-background: #282A36;
+	--blue-header: #8DEEFF;
+	--light-text: #465578;
+	--yellow-link: #DFD57A;
+	--pink-link: #FB88CC;
+}
+
+body {
+	font-family: 'Inconsolata', monospace;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+}
+
+html {
+	height: 100vh;
+}
+
+/* Headers */
+
+.blue-header {
+	color: var(--blue-header);
+	text-transform: uppercase;
+	padding-top: 35px;
+	text-align: center;
+	font-size: 16px;
+}
+
+/* Website Layout */
+
+.container {
+	display: grid;
+	grid-template-columns: 140px 1fr 2fr 1fr;
+	max-height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	background: var(--primary-background);
+}
+
+.middle {
+	display: grid;
+	grid-template-rows: 50% 50%;
+	height: 100vh;
+}
+
+.right {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 50% 50%;
+}
+
+/* Sidebar */
+
+.sidebar {
+	background: var(--nav-background);
+	height: 100vh;
+	position: relative;
+}
+
+button {
+ 	font-size: 11px;
+ 	text-decoration: none;
+ 	padding-top: 18px;
+ 	padding-left: 0px;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+}
+
+button a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px 0px 0px 10px;
+	margin-top: 0;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.logo {
+	width: 100px;
+	height: 29px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 6%;
+	margin-bottom: 5px;
+}
+
+.media-icon {
+	position: absolute;
+	bottom: 2%;
+}
+
+.media {
+	margin-left: 4px;
+}
+
+i {
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 8%;
+	padding: 4px 0;
+}
+
+.settings {
+	background-color: #8DEEFF;
+	font-size: 12px;
+}
+
+.settings-txt {
+	color: #8DEEFF;
+	pointer-events: none;
+}
+
+.gists {
+	background-color: #5CF481;
+	font-size: 13px;
+}
+
+.gists-txt {
+	color: #5CF481;
+	pointer-events: none;
+}
+
+.stack {
+	background-color: #F9B564;
+	font-size: 14px;
+}
+
+.stack-txt {
+	color: #F9B564;
+	pointer-events: none;
+}
+
+.trending {
+	background-color: #FB88CC;
+	font-size: 14px;
+}
+
+.trending-txt {
+	color: #FB88CC;
+	pointer-events: none;
+}
+
+.scratch {
+	background-color: #B493F3;
+	font-size: 12px;
+}
+
+.scratch-txt {
+	color: #B493F3;
+	pointer-events: none;
+}
+
+.playground {
+	background-color: #F1F1EC;
+	font-size: 11px;
+}
+
+.playground-txt {
+	color: #F1F1EC;
+	pointer-events: none;
+}
+
+.help {
+	background-color: #DFD57A;
+	font-size: 11px;
+}
+
+.help-txt {
+	color: #DFD57A;
+	pointer-events: none;
+}
+
+/* Popular on R/JavaScript */
+
+.popular {
+	margin-left: 5%;
+ 	height: 100vh;
+ 	overflow-y: auto;
+ 	margin-left: 20px;
+ }
+
+.popular-entries {
+	overflow-y: scroll;
+	font-size: 12px;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+
+.popular-h {
+	margin-bottom: 15px;
+}
+
+.reddit {
+	margin-bottom: 30px;
+}
+
+.popular li {
+	border-left: 3px solid #44475a;
+	padding-left: 7px;
+	list-style-type: none;
+}
+
+.popular li:hover {
+	transition: 0.8s;
+	border-left: 3px solid #5CF481;
+	cursor: pointer;
+}
+
+li {
+	padding-left: 7px;
+	list-style-type: none;
+}
+
+.rjs {
+	margin-bottom: 32px;
+}
+
+h3 {
+	margin: 0;
+}
+
+.title {
+	color: white;
+	font-size: 14px;
+}
+
+.author {
+	color: var(--blue-header);
+}
+
+.redditor {
+	color: #DFD57A;
+}
+
+.score {
+	color: #5E73A1;
+}
+
+.reddit-link {
+	color: #FB88CC;
+}
+
+/* Relevant JS History */
+
+.relevant {
+	height: 50vh;
+	overflow-y: auto;
+	font-size: 14px;
+	position: relative;
+	line-height: 36px;
+ 	text-overflow: clip;
+ 	white-space: nowrap;
+}
+
+.relevant-h {
+	margin-bottom: 30px;
+	margin-top: -5px;
+}
+
+.histories a {
+	overflow-y: scroll;
+	color: #5E73A1;
+	text-align: justify;
+	text-decoration: none;
+
+}
+
+.time {
+	color: #8f959e;
+	float: right;
+ 	text-overflow: clip;
+ 	white-space: nowrap;
+}
+
+
+
+/* Date and Time */
+
+.date-time {
+	height: 50vh;
+	position: relative;
+	text-align: center;
+}
+
+.clock-session {
+	margin-top: 65px;
+	display: inline-block;
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 700;
+	color: var(--light-text);
+}
+
+.clock {
+	float: left;
+	font-size: 90px;
+}
+
+.date-display {
+	margin-top: 10px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 20px;
+	color: var(--light-text);
+}
+
+/* Did you know? Popup */
+
+.main-popup {
+	color: var(--light-text);
+	text-align: center;
+	font-size: 13px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.got-it {
+	color: #F9B564;
+}
+
+.fa-question-circle {
+	color: #F9B564;
+}
+
+.hidden {
+	display: none !important;
+}
+
+
+
+/* GitHub History*/
+
+.github-history {
+	height: 80vh;
+	overflow-y: auto;
+}
+
+.github-history ul {
+	overflow-y: scroll;
+}
+
+h6 {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 5px;
+	color: #5E73A1;
+	margin-bottom: 25px;
+}
+
+.issues-pulls {
+	height: 100vh;
+	text-align: center;
+}
+
+.issues {
+	display: inline-block;
+	position: relative;
+	vertical-align: bottom;
+	padding-top: 0px;
+	font-size: 14px;
+	color: var(--yellow-link);
+}
+
+.pull-reqs {
+	display: inline-block;
+	position: relative;
+	vertical-align: bottom;
+	padding-top: 0px;
+	font-size: 14px;
+	color: var(--pink-link);
+}
+
+.caret-1 {
+	position: absolute;
+	margin-top: 10px;
+	vertical-align: top;
+	text-align: center;
+	margin-left: -35px;
+}
+
+.caret-2 {
+	position: absolute;
+	margin-top: 10px;
+	vertical-align: top;
+	text-align: center;
+	margin-left: -70px;
+}
+
+.repo {
+	color: #5E73A1;
+	text-align: left;
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+
+.issue {
+	color: var(--yellow-link);
+	font-size: 14px;
+	text-align: left;
+	margin-bottom: 7px;
+}
+
+.note {
+	color: white;
+	font-size: 14px;
+	text-align: left;
+}
+
+.issues-content {
+	margin-top: 35px;
+	margin-left: 20px;
+}
+
+.issues-content li {
+	border-left: 3px solid #44475a;
+	padding-left: 7px;
+	list-style-type: none;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.issues-content li:hover {
+	transition: 0.8s;
+	border-left: 3px solid #5CF481;
+	cursor: pointer;
+}
